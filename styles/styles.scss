@@ -1,0 +1,353 @@
+$textcolor :  hsl(0, 0%, 100%);
+$fontfamilyBarlow: "Barlow";
+$fontfamilyFraunces: "Fraunces";
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+#hero{
+    background-image: url('/Images/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 100%;
+    background-position: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.menu-icon{
+    position: relative;
+}
+.nav-bar{
+    display: none;
+    position: absolute;
+    right: 75px;
+    top: 50px;
+    background-color: $textcolor;
+   
+    
+    ul{
+        list-style-type:none;
+        
+    }
+    li{
+        padding: 15px 20px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 18px;
+    }
+    a[href="contact"]{
+        background-color:  hsl(51, 100%, 49%);
+        border: 2px solid black;
+    }
+}
+
+.header-info{
+    text-align: center;
+    margin-top: 15vh;
+    h1{
+        letter-spacing: 10px;
+        color: $textcolor;
+        text-align: center;
+        font-family: $fontfamilyFraunces, sans-serif;
+        font-weight: 900;
+        font-size: 2.3em;
+    }
+    img{
+        margin-top: 18vh;
+    }
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    h1{
+        color: hsl(212, 27%, 19%);
+        margin-top: 20px;
+        font-family: $fontfamilyFraunces, sans-serif;
+        font-weight: 900;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .grid-item2{
+        .grid-item2-info{
+           width: 75%;
+           margin: 75px auto;
+           text-align: center;
+           padding: 0 20px;
+        
+           p{
+            font-family: $fontfamilyBarlow, sans-serif;
+            font-weight: 600;
+            color: hsl(232, 10%, 55%);
+            font-size: 18px;
+            padding: 20px 0;
+           }
+           a{
+               text-decoration-color:hsl(51, 100%, 49%);
+               text-decoration-thickness: 0.4em;
+               font-family: $fontfamilyFraunces, sans-serif;
+               font-weight: 900;
+               color: hsl(212, 27%, 19%);
+               width: 25%;
+           }
+        }
+    }
+    .grid-item4{
+        .grid-item4-info{
+            text-align: center;
+            padding: 0 20px;
+            width: 75%;
+            margin: 75px auto;
+        }
+        p{
+            font-family: $fontfamilyBarlow, sans-serif;
+            font-weight: 600;
+            color: hsl(232, 10%, 55%);
+            font-size: 18px;
+            padding: 25px 0;
+        }
+        a{
+            text-decoration-color:hsl(7, 99%, 70%);
+            text-decoration-thickness: 0.4em;
+            font-family: $fontfamilyFraunces, sans-serif;
+            font-weight: 900;
+            color: hsl(212, 27%, 19%);
+            width: 25%;
+        }
+    }
+    .grid-item5{
+        background-image: url('/Images/image-graphic-design.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        img{
+            position: absolute;
+        }
+        h1{
+            color: hsl(167, 40%, 24%);
+        }
+        .grid-item5-info{
+            color: hsl(167, 40%, 24%);
+            margin: 45vh auto 4vh auto;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+        p{
+            font-family: $fontfamilyBarlow, sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            padding-top: 5vh;
+        }
+    }
+    .grid-item6{
+        background-image: url('/Images/image-photography.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        img{
+            position: absolute;
+            
+        }
+        .grid-item6-info{
+            color: hsl(198, 62%, 26%);
+            margin:45vh auto 4vh auto;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            p{
+                font-family: $fontfamilyBarlow, sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                padding-top: 5vh;
+            }
+        }
+    }
+}
+#Testimonials{
+    width: 100%;
+    margin: 10vh auto 5vh auto;
+    h1{
+        color: hsl(210, 4%, 67%);
+        font-size: 1em;
+        text-align: center;
+        letter-spacing: 0.2em;
+        font-family: $fontfamilyFraunces;
+        font-weight: 900;
+    }
+    img{
+        border-radius: 50%;
+    }
+    div{
+        padding: 20px;
+        text-align: center;
+    }
+    p{
+        color: hsl(213, 9%, 39%);
+        font-family: $fontfamilyBarlow, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 20px;
+    }
+    span{
+        color: hsl(210, 4%, 67%);
+    }
+    h2{
+        color: hsl(212, 27%, 19%);
+        font-family: $fontfamilyFraunces;
+        font-weight: 900;
+        padding: 4px;
+    }
+}
+#Gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    img{
+        width: 100%;
+    }
+}
+footer{
+    background-color: hsl(168, 34%, 41%);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div{
+        padding: 30px;
+    }
+    h1{
+        color: hsl(167, 40%, 24%);
+        font-family: $fontfamilyBarlow;
+        font-weight: 900;
+    }
+    a{
+        color: hsl(167, 40%, 24%);
+        font-family: $fontfamilyBarlow;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 5px;
+        font-size: 18px;
+    }
+    a[href="#services"]:hover{
+        cursor: grab;
+        color: $textcolor;
+    }
+    a[href="twitter"]:hover{
+        img{
+            color: $textcolor;
+        }
+        cursor: grab;
+    }
+
+}
+@media only screen and (min-width: 768px){
+  #hero{
+    background-image: url('/Images.desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .menu-icon{
+        display: none;
+      }
+      .nav-bar{
+        display: block;
+        margin-top: 10px;
+      }
+      ul{
+        list-style-type: none;
+      }
+      li{
+        display: inline;
+      }
+    a{
+      text-decoration: none;
+      padding: 15px;
+      color: $textcolor;
+      font-size: 18px;
+      font-family: $fontfamilyBarlow;
+      font-weight: 600px;
+    }
+    a[href="#contact"]{
+        background-color: $textcolor;
+        color: hsl(212, 27%, 19%);
+        border-radius: 50px;
+        font-family: $fontfamilyFraunces;
+        font-weight: 900;
+    }
+    .header-info{
+        h1{
+            font-size: 4em;
+        }
+        img{
+            margin-top: 5vh;
+        }
+    }
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    .grid-item1{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .grid-item2{
+        grid-column: 1 / 2;
+     
+        .grid-item2-info{
+            text-align: left;
+        }
+    }
+    .grid-item3{
+        grid-column: 1 / 2;
+    }
+    .grid-item4{
+        grid-column: 2 / 3;
+        .grid-item4-info{
+            text-align: left;
+        }
+    }
+    .grid-item5{
+        background-image: url('/Images.desktop/image-graphic-design.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+
+    }
+    .grid-item6{
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        background-image: url('/Images.desktop/image-photography.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        
+    }
+    
+  }
+  #Testimonials{
+    .clients{
+        display: flex;
+        width: 100%;
+    }
+  }
+  #Gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+  }
+  footer{
+    a{
+        padding: 10px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "sunny-side-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch styles/styles.scss:styles/styles.css",
+    "sass-version": "sass --version"
+  },
+  "author": "",
+  "license": "ISC"
+}
